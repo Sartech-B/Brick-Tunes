@@ -1,0 +1,240 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Helvetica, Sans-serif;
+	box-sizing: border-box;
+}
+#view-container {
+	background-color: #E9EBEE;
+}
+.search-box {
+    background: #FFF url(http://html-generator.weebly.com/files/theme/input-text-9.png) no-repeat 4px 4px; 
+	-moz-border-radius-bottomright: 30px; 
+	-webkit-border-bottom-right-radius: 30px; 
+	border-bottom-right-radius: 30px; 
+	border: 1px solid #848484; 
+	outline:0; 
+	height:25px; 
+	width: 275px; 
+	padding-right: 20px;
+	color: black;
+	margin-top: 5px;
+	margin-left: 25px;
+	 border: 1px solid #999; 
+    outline:0; 
+    padding-left: 25px;
+    height:25px; 
+    width: 275px;
+}
+#loading-img {
+	width: 50%;
+}
+#inst {
+	color: black;
+}
+#header {
+	height: 45px;
+	width: 100%;
+	color: white;
+	border-bottom: 1px solid #103480;
+	background: url('../Images/t.png') center center;
+	background-size: cover;
+	display: flex;
+}
+#search-header {
+	height: 40px;
+	width: 100%;
+	color: white;
+	background: black;
+	font-size: 35px;
+	background-size: cover;
+	font-family: Helvetica;
+	font-size: 25px;
+	display: flex;
+	transition: all 0.3s ease-in-out;	
+}
+.main-content {
+	width: 100%;
+}
+#header a {
+	font-family: Helvetica, Sans-serif;
+	color: white;
+	font-size: 18px;
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	border-radius: 2px;
+	transition: all 0.3s ease-in-out;
+}
+#header a:hover {
+	background-color: #003366;
+	text-decoration: none;
+}
+.music {
+	width: 200px;
+	min-height: 200px;
+	border-radius: 100px;
+}
+.music:hover {
+	cursor: pointer;
+}
+.song-name {
+	font-size: 20px;
+}
+.overlay {
+	display: none;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	color: white;
+	font-family: Calibri;
+	font-size: 32px;
+	background-color: rgba(0, 0 , 0, 0.5);
+}
+.now-playing {
+	display: none;
+	font-size: 18px;
+	width: 65%;
+	height: 65%;
+	background: url('../Images/equi.gif') center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*
+footer {
+	background-color: #262626;
+	color: white;
+	font-family: Arial;
+	bottom: 0px;
+	position: fixed;
+    height: 60px;
+	border-top: 2px solid black;
+	width: 100%;
+}*/
+.artist {
+	color: #999999;
+	font-size: 20px;
+}
+.list-category img {
+	width: 55px;
+	height: 55px;
+	border-radius: 27.5px;
+	box-shadow: 1.5px 2px 3.5px 2px gray;
+	margin-right: 5px;
+	transition: all 0.3s ease-in-out;
+}
+.list-category:hover img {
+	transform: rotate(-90deg);
+	margin-right: 25px;
+	box-shadow: 0.5px 1.5px 2.5px 1.5px gray;
+	transition:0;
+}
+.list-category {
+	text-decoration: none;
+	color: black;
+}
+.list-category:hover {
+	cursor: pointer;
+	color: black;
+	text-decoration: none;
+	transition:0;
+}
+#menu {
+	height: 100%;
+}
+@media only screen and (max-width: 1000px){
+	.main-content td {
+		display: block;	
+	}
+	.music {
+		width: 620px;
+		min-height: 620px;
+		border-radius: 310px;
+	}
+	.overlay {
+		width: 620px;
+		min-height: 620px;
+		border-radius: 310px;
+		font-size: 100px;
+	}
+	#loading-img {
+		min-width: 100%;
+		height: 100%;
+	}
+	.song-name {
+		font-size: 35px;
+	}
+	#title {
+		margin-left: 5px;
+		font-size: 100px;
+	}
+	#menu {
+		margin-left: 0px;
+	}
+	#header a {
+		font-size: 25px;
+	}
+	.list-category img {
+		width: 80px;
+		height: 80px;
+		border-radius: 40px;
+	}
+	.list-category {
+		font-size: 45px;
+	}
+}
+@media only screen and (max-width: 450px){
+	#header {
+		width: 450px;
+	}
+	footer {
+		width: 450px;
+		font-size: 25px;
+		bottom: 0px;
+	}
+	#search-header {
+		width: 450px;
+		font-size: 15px;
+	}
+	.main-content {
+		width: 450px;
+	}
+	#container {
+		width: 450px;
+	}
+	.music {
+		width: 320px;
+		min-height: 320px;
+		border-radius: 160px;
+	}
+	.overlay {
+		width: 320px;
+		min-height: 320px;
+		border-radius: 160px;
+		font-size: 45px;
+	}
+	.now-playing {
+		font-size: 100px;
+	}
+	.song-name {
+		font-size: 22px;
+	}
+	#title {
+		margin-left: 5px;
+		font-size: 100px;
+	}
+	#menu {
+		margin-left: 0px;
+	}
+	#header a {
+		font-size: 25px;
+	}
+	.list-category img {
+		width: 80px;
+		height: 80px;
+		border-radius: 40px;
+	}
+	.list-category {
+		font-size: 45px;
+	}
+}
